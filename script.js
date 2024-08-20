@@ -10,7 +10,8 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Sim!",
-                afirmacao: "Porque pode diminuir a quantidade de roupas no lixo."
+                afirmacao: ["Porque pode diminuir a quantidade de roupas no lixo.",
+            ]
             },
             {
                 texto: "Não!",
@@ -83,5 +84,14 @@ function mostraResultado() {
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
+
+
+
+
+
+function aleatorio (lista){
+    const posicao = Math.random()*lista.length;
+}
+
 
 mostraPergunta();
